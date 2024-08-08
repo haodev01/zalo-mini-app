@@ -7,10 +7,7 @@ const LayoutDefault = () => {
   const increment = () => setStep((prev) => prev + 1);
   return (
     <div>
-      <h1>The Header</h1>
-      {step}
       <Outlet context={{ step, increment }} />
-      <h1>The Footer</h1>
     </div>
   );
 };
